@@ -19,7 +19,7 @@ fn main() {
 
     }
 
-    println!("{:?}", args);
+    // println!("{:?}", args);
 
 
 }
