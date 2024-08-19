@@ -16,11 +16,12 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 }
 
 pub fn parse_config(args: &[String]) -> Result<Config, &str> {
-    if args.len() < 3 {
+
+    if args.len()<2 {
         return Err("Not enough arguments");
     }
-    let query = args[1].clone();
-    let filename = args[2].clone();
+    let query = args[0].clone();
+    let filename = args[1].clone();
 
     Ok(Config { query, filename })
 }
