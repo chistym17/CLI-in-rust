@@ -1,11 +1,10 @@
 use std::process;
-use CLI::{run, parse_config};
+use cli::{run, parse_config};
 use clap::{Arg, Command};
 
 fn main() {
     let matches = Command::new("CLI Tool")
         .version("1.0")
-        .author("Your Name <your.email@example.com>")
         .about("A simple CLI tool")
         .arg(Arg::new("query")
             .help("The query string to search for")
